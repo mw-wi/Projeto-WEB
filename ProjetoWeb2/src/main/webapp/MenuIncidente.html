@@ -3,15 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <title>Menu de Incidentes</title>
+  <style>
+    body {
+      background-color: #f0f4ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #e6ecff;
+      padding: 40px 60px;
+      border: 2px solid #001f4d;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 31, 77, 0.2);
+      width: 350px;
+    }
+
+    h2 {
+      color: #001f4d;
+      margin-bottom: 25px;
+    }
+
+    button {
+      background-color: #001f4d;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin: 10px 0;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #003380;
+    }
+  </style>
 </head>
 <body>
-  <h2>Menu de Incidentes</h2>
-  <form>
-      <button formaction="CadastrarIncidente.html" type="submit">Cadastrar Incidente</button><br><br>
-      <button formaction="IncidenteServlet" type="submit">Ver Incidentes</button><br><br>
-      <button formaction="CadastroServico.html" type="submit">Cadastrar Serviço</button><br><br>
-      <button formaction="StatusServlet" type="submit">Ver Status</button><br><br>
-      <button formaction="CadastroAtualizacao.html" type="submit">Cadastrar Atualização</button><br><br>
-  </form>
+  <div class="container">
+    <h2>Menu de Incidentes</h2>
+    <form>
+      <button formaction="CadastrarIncidente.html" type="submit">Cadastrar Incidente</button><br>
+      <button formaction="IncidenteServlet" type="submit">Ver Incidentes</button><br>
+      <button formaction="CadastroServico.html" type="submit">Cadastrar Serviço</button><br>
+      <button formaction="StatusServlet" type="submit">Ver Status</button><br>
+      <button formaction="CadastroAtualizacao.html" type="submit">Cadastrar Atualização</button><br>
+    </form>
+  </div>
 </body>
 </html>
