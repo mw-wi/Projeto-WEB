@@ -3,17 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <title>Cadastrar Incidente</title>
+  <style>
+    body {
+      background-color: #f0f4ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: #e6ecff;
+      padding: 40px 60px;
+      border: 2px solid #001f4d;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 31, 77, 0.2);
+      width: 420px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #001f4d;
+      margin-bottom: 25px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #001f4d;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin-top: 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #003380;
+    }
+  </style>
 </head>
 <body>
-  <h1>Registrar Incidente</h1>
-  <form action="IncidenteServlet" method="post">
-    Descrição: <input type="text" name="descricao" required><br>
-    Prioridade: <input type="text" name="prioridade" required><br>
-    ID Status: <input type="number" name="id_status" required><br>
-    ID Usuário: <input type="number" name="id_usuario" required><br>
-    ID Técnico: <input type="number" name="id_tecnico"><br>
-    ID Serviço: <input type="number" name="id_servico" required><br>
-    <button type="submit">Salvar</button>
-  </form>
+  <div class="container">
+    <h1>Registrar Incidente</h1>
+    <form action="IncidenteServlet" method="post">
+      Descrição:<br> <input type="text" name="descricao" required><br>
+      Prioridade:<br> <input type="text" name="prioridade" required><br>
+      ID Status:<br> <input type="number" name="id_status" required><br>
+      ID Usuário:<br> <input type="number" name="id_usuario" required><br>
+      ID Técnico:<br> <input type="number" name="id_tecnico"><br>
+      ID Serviço:<br> <input type="number" name="id_servico" required><br>
+      <button type="submit">Salvar</button>
+    </form>
+  </div>
 </body>
-</html>
+</html>	
